@@ -1,0 +1,125 @@
+@extends('layout.mainlayout')
+
+@section('content-wrapper')
+    <!-- Breadcrumb Area -->
+    <div class="breadcrumb-area">
+        <h1>Dashboard</h1>
+        <ol class="breadcrumb">
+            <li class="item">
+                <a href="/"><i class='bx bx-home-alt'></i></a>
+            </li>
+            <li class="item">Dashboard</li>
+            <li class="item">Invoice</li>
+        </ol>
+    </div>
+    <!-- End Breadcrumb Area -->
+
+    <!-- Start Invoice -->
+    <div class="invoice-area mb-30">
+        <div class="invoice-header mb-30 d-flex justify-content-between">
+            <div class="invoice-left-text">
+                <h3 class="mb-0">Fiva Admin</h3>
+                <p class="mt-2 mb-0">M/2750, <br>Quadra Street, <br>Victoria, <br>Canada.</p>
+            </div>
+
+            <div class="invoice-right-text">
+                <h3 class="mb-0 text-uppercase">Invoice</h3>
+            </div>
+        </div>
+
+        <div class="invoice-middle mb-30">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="text">
+                        <h4 class="mb-2">Bill To</h4>
+                        <span class="d-block mb-1">Jessie M Home</span>
+                        <span class="d-block mb-1">2019 Redbud Drive</span>
+                        <span class="d-block">New York, NY 10011</span>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="text">
+                        <h4 class="mb-2">Ship To</h4>
+                        <span class="d-block mb-1">Jessie M Home</span>
+                        <span class="d-block mb-1">2019 Redbud Drive</span>
+                        <span class="d-block">New York, NY 10011</span>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="text text-right">
+                        <h5>Invoice # <sub>Int-001</sub></h5>
+                        <h5>Invoice Date # <sub>11/12/2019</sub></h5>
+                        <h5>P.O # <sub>2412/2019</sub></h5>
+                        <h5 class="mb-0">Due Date # <sub>26/12/2019</sub></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="invoice-table table-responsive mb-30">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Description</th>
+                        <th>Unit Price</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>01</td>
+                        <td>Apple iPhone XR (64GB)</td>
+                        <td class="text-right">$100.00</td>
+                        <td class="text-right">$100.00</td>
+                    </tr>
+
+                    <tr>
+                        <td>01</td>
+                        <td>Apple iPhone XR Black</td>
+                        <td class="text-right">$25.00</td>
+                        <td class="text-right">$50.00</td>
+                    </tr>
+
+                    <tr>
+                        <td>01</td>
+                        <td>HeadPhone</td>
+                        <td class="text-right">$15.00</td>
+                        <td class="text-right">$45.00</td>
+                    </tr>
+
+                    <tr>
+                        <td>01</td>
+                        <td>HeadPhone</td>
+                        <td class="text-right">$15.00</td>
+                        <td class="text-right">$45.00</td>
+                    </tr>
+
+                    <tr>
+                        <td class="text-right" colspan="3"><strong>Subtotal</strong></td>
+                        <td class="text-right">$195.00</td>
+                    </tr>
+
+                    <tr>
+                        <td class="text-right" colspan="3"><strong>Sales Tax 5.0%</strong></td>
+                        <td class="text-right">$9.75</td>
+                    </tr>
+
+                    <tr>
+                        <td class="text-right total" colspan="3"><strong>Total</strong></td>
+                        <td class="text-right total-price"><strong>$204.75</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="invoice-btn-box text-right">
+            <a href="#" class="default-btn"><i class='bx bx-printer'></i> Print</a>
+            <a href="#" class="optional-btn"><i class='bx bx-paper-plane'></i> Send Invoice</a>
+        </div>
+    </div>
+    <!-- End Invoice -->
+@endsection
